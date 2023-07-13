@@ -17,26 +17,29 @@
 **Data Model:**
 If each pull of "Y2K" style happens and is stored, I can create a historical model of items.
 
-**Next Steps:**
-Get Roblox API key
-Identify five styles
-Identify categories of items
-Figure out if I can narrow down list of items based on style name (e.g. Y2K)
+**Things done:**
+-Create Django project
+-Identify major Roblox fashion styles (Y2K, Streetwear, Cottage-core, Fantasy)
 
+**Next steps:**
+-Create model
+-Pull top 100 items per style and put into database
+-Create API to pull database
 
-**Previous things (analyze later):**
-Create getstyle1.py to get list of items based champions and their respective data but realized that data dragon already does this
-Converted list of champions from a string into a json file
-Created a champions model
-Created a management command to load champions.json into the database
-Created a vue app to list all champions and their respective images
-Created views for four key stats and display the top 10 champions per stat
-Created an API to replace previous hard-coded data view; couldn't get top 10 list to work now
-For live game data pull, need to get encrypted ID via https://na1.api.riotgames.com/lol/summoner/v4/summoners/by-name/"input summoner name"
-Get live game data via https://na1.api.riotgames.com/lol/spectator/v4/active-games/by-summoner/"input ID"
-Create a new view to execute steps 9/10 and to have exception handling, save file to sample.json
-Create a management command to load match data (sample.json) into the database
-Load match data directly from views.py
-Added new endpoint to API for match data
-Display other player names with Scout button
+**Notes:**
+-Roblox does not require an API key but what happens if I make too many requests, how does it even know a specific person is using it and abusing it
+-Create getstyle1.py to get list of items based champions and their respective data but realized that data dragon already does this
+-Converted list of champions from a string into a json file
+-Created a champions model
+-Created a management command to load champions.json into the database
+-Created a vue app to list all champions and their respective images
+-Created views for four key stats and display the top 10 champions per stat
+-Created an API to replace previous hard-coded data view; couldn't get top 10 list to work now
+-For live game data pull, need to get encrypted ID via https://na1.api.riotgames.com/lol/summoner/v4/summoners/by-name/"input summoner name"
+-Get live game data via https://na1.api.riotgames.com/lol/spectator/v4/active-games/by-summoner/"input ID"
+-Create a new view to execute steps 9/10 and to have exception handling, save file to sample.json
+-Create a management command to load match data (sample.json) into the database
+-Load match data directly from views.py
+-Added new endpoint to API for match data
+-Display other player names with Scout button
 Calculated if the user should invade or not based on if his/her team's total hp is greater than the enemy team's total hp

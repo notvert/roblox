@@ -1,14 +1,4 @@
 {
-    "keyword": "y2k",
-    "elasticsearchDebugInfo": {
-      "elasticsearchQuery": null,
-      "isFromCache": false,
-      "indexName": "",
-      "isTerminatedEarly": null,
-      "isForceTerminationEnabledByRequest": null
-    },
-    "previousPageCursor": null,
-    "nextPageCursor": "2_1_d51b81e0fda8e04f8c8be2703b312efc",
     "data": [
       {
         "id": 11109272427,
